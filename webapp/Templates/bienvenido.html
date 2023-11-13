@@ -7,5 +7,16 @@
 <body>
 <h1>Bienvenido a Sistema de Administracion de Personas </h1>
 
+<div> Numero de personas en BD: {{no_personas}}</div>
+<div>
+    <ul>
+        {% for  persona in personas %}
+             <li>
+                  {{persona}}
+             </li>
+        {% endfor %}
+    </ul>
+</div>
+
 </body>
 </html>
